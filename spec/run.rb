@@ -1,4 +1,5 @@
-require_relative './config/environment.rb'
+require 'pry'
+require_relative '../config/environment'
 
 
 ###  WRITE YOUR TEST CODE HERE ###
