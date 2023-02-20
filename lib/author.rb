@@ -16,4 +16,7 @@ class Author
       def add_article(magazine, title)
         Article.new(self, magazine, title)
       end
+      def topic_areas
+        magazines.collect{|magazine| magazine.category}.uniq
+      end
 end
