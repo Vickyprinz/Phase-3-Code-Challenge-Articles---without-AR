@@ -8,4 +8,9 @@ attr_reader :magazine, :title, :author
         @title = title
         @@all << self
       end
+
+  def self.all
+    @@all
+  end
+
 end
