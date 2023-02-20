@@ -9,5 +9,8 @@ class Author
         Article.all.select{|article| article.author.name == self.name}
       end
     
-
+      def magazines
+        all_magazines = articles.map{ |article| article.magazine}
+        all_magazines.uniq
+      end
 end
