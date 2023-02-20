@@ -32,7 +32,7 @@ class Magazine
     end
   
     def contributing_authors
-      #tally authors then map through the articles and get array of authors
+      #tally the authors then map through the articles and get array the of the author
       magazine_authors = magazine_articles.collect{|article| article.author.name}
       magazine_authors.tally.each {|key, value|  value > 2}
       magazine_authors
