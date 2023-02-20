@@ -1,0 +1,3 @@
+class Magazine
+    a
+    end
